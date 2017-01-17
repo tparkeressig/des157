@@ -7,15 +7,20 @@ console.log("The js is being read.");
 function setup() {
   var canvas = createCanvas(800, 250);
   // Move the canvas so it's inside <div id="sketch-holder">.
-  canvas.parent('sketch-holder');
-  background(255);
+  canvas.parent('p5');
+  background(0);
 }
+
 
 function draw() {
   if(mouseIsPressed){
-    fill (0);
+    fill (127);
   }else{
     fill(255);
   }
-  ellipse(mouseX,mouseY,50,50);
+  if (keyIsPressed){
+  rect(mouseX,mouseY,100,100);
+  }else{
+  rect(mouseX,mouseY,50,50);
+  }
 }
