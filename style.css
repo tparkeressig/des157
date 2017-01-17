@@ -62,7 +62,7 @@ header{
   width: 810px;
 
 	margin: auto;
-  background-color: lightblue;
+  background-color: #4286f4;
   text-align: center;
 	margin-bottom: 5%;
 }
@@ -95,7 +95,7 @@ header{
 
 div {
   width: 27%;
-  background-color: lightblue;
+  background-color: #4286f4;
   border-radius: 25px;
   padding: 2%;
 }
@@ -124,7 +124,7 @@ a:active{
 
 footer{
   clear: both;
-  background-color: lightblue;
+  background-color: #4286f4;
   width: 100%;
   padding-top: 1%;
 	text-align:center;
