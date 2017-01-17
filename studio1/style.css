@@ -1,7 +1,6 @@
 /*TITLE: CSS for "Tara for DES 157" site */
 
-/*ASK: Am I allowed to use the Meyer Reset?
-...Here it is, for now */
+/*Have a Meyer Reset*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -52,26 +51,43 @@ table {
 
 /*BEGIN: my code starts here*/
 
+/* Maybe try this later?
+* {
+    box-sizing: border-box;
+}
+*/
+
 html {
   font-family: 'Overpass', sans-serif;
   line-height: 1.75;
 }
 
-header{
-  width: 100%;
-  background-color: lightblue;
-  text-align: center;
+a {
+
 }
 
 main {
   width: 70%;
-  max-width: 800px;
+  max-width: 810px;
   margin: auto;
   background-color: transparent;
 }
 
-section{
-  margin-top: 10%;
+header{
+	display: inline-block;
+  width: 810px;
+	height: 260px;
+	margin: auto;
+  background-color: lightblue;
+  text-align: center;
+	margin-bottom: 5%;
+}
+
+#sketch-holder {
+	width: 800px;
+	height: 250px;
+	margin: auto;
+	margin-top: 5px;
 }
 
 #exercises {
