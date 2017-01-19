@@ -158,6 +158,6 @@ nav h3 {
 
 .blog-posts article p {}
 
-header, nav, p, ol, li, footer {
+header, nav, ol, p, img, li, footer {
     margin-top: 1em;
 }

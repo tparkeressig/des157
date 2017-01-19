@@ -74,14 +74,13 @@ header {
     background-color: transparent;
     border-radius: 25px;
     text-align: center;
-    margin-bottom: 5%;
 }
 
 #p5 {
     width: 800px;
     margin: auto;
     margin-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5p;
 }
 
 #exercises {
