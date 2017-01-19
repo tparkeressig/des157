@@ -1,6 +1,8 @@
 /*TITLE: CSS for "Tara for DES 157" site */
 
+
 /*Have a Meyer Reset*/
+
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -8,34 +10,42 @@
 */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 
 ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    list-style: none;
 }
 
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /*BEGIN: my code starts here*/
+
 
 /* Maybe try this later?
 * {
@@ -44,93 +54,95 @@ table {
 */
 
 html {
-  font-family: 'Overpass', sans-serif;
-  line-height: 1.75;
-	color: white;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.75;
+    color: white;
 }
-
 
 main {
-  width: 70%;
-  max-width: 810px;
-  margin: auto;
-  background-color: transparent;
+    width: 70%;
+    max-width: 810px;
+    margin: auto;
+    background-color: transparent;
 }
 
-header{
-	display: inline-block;
-  width: 810px;
-
-	margin: auto;
-  background-color: #4286f4;
-  text-align: center;
-	margin-bottom: 5%;
+header {
+    display: inline-block;
+    width: 810px;
+    margin: auto;
+    background-color: #641E16;
+		border-radius: 25px;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 #p5 {
-	width: 800px;
-	margin: auto;
-	margin-top: 5px;
-	padding-bottom: 5px;
+    width: 800px;
+    margin: auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
 }
 
 #exercises {
-
-  display: inline-block;
-  float: left;
+    display: inline-block;
+    float: left;
 }
 
 #studios {
-
-  display: inline-block;
-  margin-left: 3.5%;
+    display: inline-block;
+    margin-left: 3.5%;
 }
 
 #project {
+    display: inline-block;
+    float: right;
+    margin-bottom: 5%;
+}
 
-  display: inline-block;
-  float: right;
-  margin-bottom: 5%;
+h2{
+	font-size: 2em;
 }
 
 div {
-  width: 27%;
-  background-color: #4286f4;
-  border-radius: 25px;
-  padding: 2%;
+    width: 27%;
+    background-color: #641E16;
+    border-radius: 25px;
+    padding: 2%;
 }
+
 
 /* Dear Tara, remember the proper order using "Lord Vader: His father, Anakin." or "Lord Voldemor Has Foul Ambitions" heehee. */
 
 a:link {
-	color: white;
+    color: white;
 }
 
 a:visited {
-	color: white;
+    color: white;
 }
 
-a:hover{
-	color: black;
+a:hover {
+    color: black;
 }
 
-a:focus{
-	color: black;
+a:focus {
+    color: black;
 }
 
-a:active{
-	color: black;
+a:active {
+    color: black;
 }
 
-footer{
-  clear: both;
-  background-color: #4286f4;
-  width: 100%;
-  padding-top: 1%;
-	text-align: center;
+footer {
+    clear: both;
+    background-color: #641E16;
+		border-radius: 25px;
+    width: 100%;
+    padding-top: 1%;
+    text-align: center;
 }
 
 footer li {
-	display: inline;
-	margin: .5%;
+    display: inline;
+    margin: .5%;
 }
