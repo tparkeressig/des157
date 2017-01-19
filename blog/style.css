@@ -64,6 +64,7 @@ body {
     flex-direction: column;
     font-family: 'Old Standard TT', serif;
     background-color: transparent;
+    color: black;
 }
 
 header {
@@ -85,6 +86,28 @@ nav ol li {
     display: inline;
     margin: .5%;
 }
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: slategrey;
+}
+
+a:focus {
+    color: slategrey;
+}
+
+a:active {
+    color: slategrey;
+}
+
+
 
 article img {
     width: 350px;
@@ -167,3 +190,6 @@ nav h3 {
 header, nav, ol, article, p, img, li, footer {
     margin-top: 1em;
 }
+
+
+/* END */

@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 100
     font: inherit;
     vertical-align: baseline;
 }
@@ -44,7 +44,7 @@ table {
 }
 
 
-/*BEGIN: my code starts here*/
+/*BEGIN: my code starts here ============================================== */
 
 
 /* Maybe try this later?
@@ -72,8 +72,12 @@ header {
     width: 810px;
     margin: auto;
     background-color: transparent;
-    border-radius: 25px;
     text-align: center;
+}
+
+div{
+
+  border-radius: 25px;
 }
 
 #p5 {
@@ -121,15 +125,15 @@ a:visited {
 }
 
 a:hover {
-    color: black;
+    color: lightgrey;
 }
 
 a:focus {
-    color: black;
+    color: lightgrey;
 }
 
 a:active {
-    color: black;
+    color: lightgrey;
 }
 
 footer {
