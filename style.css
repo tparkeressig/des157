@@ -57,6 +57,7 @@ html {
     font-family: 'Overpass', sans-serif;
     line-height: 1.75;
     color: white;
+		background-color: #641E16;
 }
 
 main {
@@ -70,8 +71,8 @@ header {
     display: inline-block;
     width: 810px;
     margin: auto;
-    background-color: #641E16;
-		border-radius: 25px;
+    background-color: transparent;
+    border-radius: 25px;
     text-align: center;
     margin-bottom: 5%;
 }
@@ -99,13 +100,13 @@ header {
     margin-bottom: 5%;
 }
 
-h2{
-	font-size: 2em;
+h2 {
+    font-size: 2em;
 }
 
 div {
     width: 27%;
-    background-color: #641E16;
+    background-color: transparent;
     border-radius: 25px;
     padding: 2%;
 }
@@ -135,8 +136,8 @@ a:active {
 
 footer {
     clear: both;
-    background-color: #641E16;
-		border-radius: 25px;
+    background-color: transparent;
+    border-radius: 25px;
     width: 100%;
     padding-top: 1%;
     text-align: center;
