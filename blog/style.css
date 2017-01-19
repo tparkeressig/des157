@@ -86,6 +86,12 @@ nav ol li {
     margin: .5%;
 }
 
+article img {
+    width: 350px;
+    height: 621px;
+    margin-left: 5%;
+}
+
 footer {
     background-color: lightyellow;
     text-align: center;
@@ -158,6 +164,6 @@ nav h3 {
 
 .blog-posts article p {}
 
-header, nav, ol, p, img, li, footer {
+header, nav, ol, article, p, img, li, footer {
     margin-top: 1em;
 }
