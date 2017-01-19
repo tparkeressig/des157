@@ -144,7 +144,7 @@ time {
     font-style: italic;
 }
 
-nav h1 {
+nav h3 {
     font-size: 1.5em;
 }
 
@@ -152,7 +152,7 @@ nav h1 {
 
 .blog-posts article {}
 
-.blog-posts article H1 {
+.blog-posts article H2 {
     font-size: 3em;
 }
 
