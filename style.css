@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100
+    font-size: 100px;
     font: inherit;
     vertical-align: baseline;
 }
@@ -64,15 +64,11 @@ main {
     width: 70%;
     max-width: 810px;
     margin: auto;
-    background-color: transparent;
 }
 
 header {
-    display: inline-block;
     width: 810px;
     margin: auto;
-    background-color: transparent;
-    text-align: center;
 }
 
 div{
@@ -108,7 +104,6 @@ h2 {
 
 div {
     width: 27%;
-    background-color: transparent;
     border-radius: 25px;
     padding: 2%;
 }
@@ -138,7 +133,6 @@ a:active {
 
 footer {
     clear: both;
-    background-color: transparent;
     border-radius: 25px;
     width: 100%;
     padding-top: 1%;
