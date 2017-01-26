@@ -1,6 +1,17 @@
 /* CSS for topic brainstorm process */
 
-img{
+body {
+  font-family: sans-serif;
+}
+
+p {
+  width: 600px;
+  display: block;
+  margin: auto;
+  padding: 1em;
+}
+
+img {
   width: 600px;
   display: block;
   margin: auto;
