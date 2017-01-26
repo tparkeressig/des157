@@ -1,10 +1,11 @@
 <!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!--NOTE: You can write NOTE and it will change color in Atom? That's cool!-->
 <!doctype html>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>! ADD A DESCRIPTIVE TITLE HERE...DO NOT FORGET TO UPDATE THIS !</title>
+    <title>Tara's Ch 3-Minimum Ex</title>
     <style>
         * {
             margin: 0px;
@@ -14,7 +15,7 @@
         body {
             font-family: Verdana, Geneva, sans-serif;
             color: white;
-            background-color: #333;
+            background-color: #223;
             font-size: 11px;
             margin: 24px;
         }
@@ -26,9 +27,34 @@
 </head>
 
 <body>
-    <h1>! ADD THE CHAPTER NUMBER HERE FOLLOWED BY BRIEF TITLE FOR THE EXERCISE !</h1>
-    <h2>open the console to see the results of the script</h2>
+    <h1>Ch 3-Minimum (by Tara)</h1>
+    <h2>Open the console to see the results of the script.</h2>
     <script>
-        // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
+        //This is my minimum-finding code:
+
+        //create a function that takes two variables
+        function findSmaller (num1, num2){
+            //if statement to decide which number is smaller and assign that to the previous variable
+            if (num1 < num2) {
+              foundSmaller = num1;
+            } else if (num1 > num2){
+              foundSmaller = num2;
+            } else {
+              console.log("The numbers are equal!")
+            }
+            //return the smaller number
+            return foundSmaller;
+        }
+
+        //run the function
+
+        // create a varable to hold the smaller of the two
+        findSmaller(2,2);
+
+
+        //print the results
+        console.log(foundSmaller + " is the smaller number.")
+
+
     </script>
 </body>
