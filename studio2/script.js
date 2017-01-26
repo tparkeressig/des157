@@ -7,19 +7,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // all other js below here
 
-    // notice the form submission event
-    document.madlibsInput.onsubmit = processMadlibs;
+    //capture the submit event
+    document.f.onsubmit = processForm;
 
-    // define the process function (whatever THAT means)
-    function processMadlibs();
+    //define process function
+    function processForm() {
 
-    // store the player's name in a variable
-    var designerName = document.madlibsForm.designerName.value;
+      //store user name in a variable
+      var userName = document.f.userName.value;
+      //alert('Hi ' + userName);
 
-    //apply the method of innerHTML to concantenate a message with designerName
-    clientResponse.innerHTML="Hi there, designerName, nice to meet you.";
+      //store userColor in a variable called userColor
+      var userColor = document.f.userColor.value;
 
-    //prevent the page from reloading
-    return false;
+      //comment out the alert message above
+
+      //apply the method of innerHTML to concantenate a message with userName and userColor
+      myMsg.innerHTML="What's up, " + userName + ", I heard you like the color " + userColor + "!";
+
+      //prevent page from reloading
+      return false;
+
+    }
 
 });

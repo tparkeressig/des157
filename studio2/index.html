@@ -10,23 +10,27 @@
 
 <body>
     <h1>A new client approaches...</h1>
-    <section>
-        <h2>Quick, fill out this form and run to your client meeting!</h2>
-        <form name="madlibsForm">
-          <div>
-            <label>Your Name</label>
-            <input type="text" name="designerName"/>
-          </div>
-          <!-- Buttons below -->
-          <input type="reset" value="Erase your answers!"/>
-          <input type="submit" value="Head to the client meeting!"/>
-        </form>
-    </section>
+    <article>
+      <form name="f">
+        <div>
+          <label>name</label>
+          <input type="text" name="userName" />
+        </div>
 
-    <section>
-      <h2>You look up from your paperwork, and the client says...</h2>
-      <p id="clientResponse">Hi there!</p>
-    </section>
+        <!--add a div with label and text input with name=userColor-->
+        <div>
+          <label>color</label>
+          <input type="text" name="userColor" />
+        </div>
+
+        <input type="reset" value="reset" />
+        <input type="submit" value="submit" />
+
+      </form>
+
+      <section id="myMsg">
+      Your response will show up here!</section>
+    </article>
 
 </body>
 
