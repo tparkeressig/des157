@@ -8,3 +8,20 @@
     margin: 0px;
     padding: 0px
 }
+
+main {
+  flex-direction: row;
+  align-content: space-around;
+}
+
+#startingIngredients{
+  height: 400px;
+  width: 500px;
+  background-color: pink;
+}
+
+#recipeResults{
+  height: 400px;
+  width: 500px;
+  background-color: lightblue;
+}
