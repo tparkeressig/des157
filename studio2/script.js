@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       //alert('Hi ' + userName);
 
       //store userColor in a variable called userColor
-      var userColor = document.theForm.userColor.value;
+      var userProfesh = document.theForm.userProfesh.value;
 
       //comment out the alert message above
 
