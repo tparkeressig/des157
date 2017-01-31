@@ -25,8 +25,14 @@ h1 {
   font-size: 4em;
 }
 
-h2, div, p {
+h2 {
+  font-size: 2.5em;
   margin-bottom: 10px;
+}
+
+div, p {
+  margin-bottom: 10px;
+  font-size: 1.5em;
 }
 
 .boxes{
@@ -45,4 +51,12 @@ h2, div, p {
 #recipeResults{
   background-color: lightblue;
   /*float: right;*/
+}
+
+input[type="reset"],
+input[type="submit"] {
+  border: none;
+  font-size: 1.5em;
+  padding: 5px;
+  margin: 1px;
 }
