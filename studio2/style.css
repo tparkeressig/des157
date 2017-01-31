@@ -60,3 +60,8 @@ input[type="submit"] {
   padding: 5px;
   margin: 1px;
 }
+
+footer{
+  padding: 2px;
+  position: absolute;bottom:0;right:0;
+}
