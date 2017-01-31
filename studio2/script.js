@@ -26,9 +26,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       //Fifth, store the "good thing" the user imput in a variable called goodThingJS
       var goodThingJS = document.theForm.goodThing.value;
 
-      //Sixth, store the dropdown selection response in a variable called foodTypeJS
-      var foodTypeJS = "cookies"
-      //my guess is that is is document.theForm.foodType.value;
+      //Sixth, store the dropdown aka selection response in a variable called foodTypeJS
+      //the below didn't work. ):< Will just go back to my old variable
+      // var foodTypeDropdown =  document.getElementById("foodType");
+      // var foodTypeJS = foodTypeDropdown.options[foodTypeDropdown.selectedIndex].text;
+      var foodTypeJS = "cookies";
 
       //Finally, apply the method of innerHTML to concantenate a message with the variables you've stored earlier.
       msg1.innerHTML="What's up, " + userNameJS + "? Let's bake " + userYumJS + " " + foodTypeJS + "!";
