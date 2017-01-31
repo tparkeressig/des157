@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //First, capture the submit event
     document.theForm.onsubmit = processForm;
 
-    //Next, define process function (now we'll be inside the function!!!)
+    //Next, define process function(s) (we'll now be inside the function!!!)
     function processForm() {
 
       //Third, store user name in a variable called userNameJS
