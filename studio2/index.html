@@ -22,13 +22,13 @@
                 <!--#1 a form field for the user's name-->
                 <div>
                     <label>Your Name: </label>
-                    <input type="text" name="userName" />
+                    <input type="text" name="userName" required/>
                 </div>
                 <!-- #2 A dropdown for what to bake - The first option will be selected initially -->
                 <!-- I can't get this to work right now, I'm switching them all to cookies. ):< -->
                 <div>
                     <label>What do you want to bake:</label>
-                    <select name="foodType">
+                    <select name="foodType" required>
                   <option value="option1" selected>Pick One</option>
                   <option value="option2">cookies</option>
                   <option value="option3">cookies</option>
@@ -38,22 +38,22 @@
                 <!--#3 a form field for a yummy flavor-->
                 <div>
                     <label>Something yummy:</label>
-                    <input type="text" name="userYum" />
+                    <input type="text" name="userYum" required/>
                 </div>
                 <!--#4 a form field for the user's favorite color-->
                 <div>
                     <label>Your favorite color:</label>
-                    <input type="text" name="userColor" />
+                    <input type="text" name="userColor" required/>
                 </div>
                 <!--#5 a form field for the baked goods' shape-->
                 <div>
                     <label>A cute animal:</label>
-                    <input type="text" name="userAnimal" />
+                    <input type="text" name="userAnimal" required/>
                 </div>
                 <!--#6 a form field for what emotion is in the food-->
                 <div>
                     <label>A good thing:</label>
-                    <input type="text" name="goodThing" />
+                    <input type="text" name="goodThing" required/>
                 </div>
                 <!-- The submit and reset buttons for our recpie form -->
                 <input type="reset" value="Start over!" />
