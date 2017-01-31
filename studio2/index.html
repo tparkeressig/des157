@@ -24,6 +24,16 @@
                     <label>Your Name: </label>
                     <input type="text" name="userName" />
                 </div>
+                <!-- #2 A dropdown for what to bake - The first option will be selected initially -->
+                <div>
+                  <label>What you want to bake:</label>
+                <select name="select">
+                  <option value="option1" selected>Pick One</option>
+                  <option value="option2">cookies</option>
+                  <option value="option3">cake</option>
+                  <option value="option4">pie</option>
+                </select>
+              </div>
                 <!--#2 a form field for a yummy flavor-->
                 <div>
                     <label>Something yummy:</label>
@@ -34,17 +44,17 @@
                     <label>Your favorite color:</label>
                     <input type="text" name="userColor" />
                 </div>
-                <!--#4 a form field for the cookies' shape-->
+                <!--#4 a form field for the baked goods' shape-->
                 <div>
                     <label>A cute animal:</label>
                     <input type="text" name="userAnimal" />
                 </div>
-                <!--#5 a form field for what emotion is in the cookie-->
+                <!--#5 a form field for what emotion is in the food-->
                 <div>
                     <label>A good thing:</label>
                     <input type="text" name="goodThing" />
                 </div>
-                <!-- The buttons for our recpie form -->
+                <!-- The submit and reset buttons for our recpie form -->
                 <input type="reset" value="Start over!" />
                 <input type="submit" value="Make your recipe!" />
             </form>
