@@ -37,7 +37,7 @@ div, p {
 }
 
 .boxes {
-    height: 380px;
+    height: 430px;
     width: 280px;
     border-radius: 10px;
     margin: 10px;
@@ -50,6 +50,16 @@ div, p {
 
 #recipeResults {
     background-color: lightblue;
+}
+
+select {
+    border: none;
+    border-radius: 0;
+    background-color: lightgrey;
+    outline-offset: -1px;
+    font-size: 1em;
+    padding: 5px;
+    margin: 1px;
 }
 
 input[type="reset"], input[type="submit"] {
