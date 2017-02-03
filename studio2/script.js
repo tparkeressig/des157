@@ -27,10 +27,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var goodThingJS = document.theForm.goodThing.value;
 
         //Sixth, store the dropdown aka selection response in a variable called foodTypeJS
-        //the below didn't work. ):< Will just go back to my old variable
-        // var foodTypeDropdown =  document.getElementById("foodType");
-        // var foodTypeJS = foodTypeDropdown.options[foodTypeDropdown.selectedIndex].text;
-        var foodTypeJS = "cookies";
+        var foodTypeJS = document.theForm.foodType.options[foodType.selectedIndex].text;
+
+        // the below would only get the value (option1, option2, or option3 and not the text of the value) from the foodType selection
+        // var foodTypeJS = document.theForm.foodType.value;
+
+        // the below is another way to write this, since I have also given it an ID:
+        // var foodTypeDropdown =  document.getElementById("foodType").value;
+
+        // honestly not sure what the below does, gotta ask about it
+        // var foodTypeJS = foodTypeDropdown.options[foodType.selectedIndex].text;
 
         //Finally, apply the method of innerHTML to concantenate a message with the variables you've stored earlier.
         msg1.innerHTML = "What's up, " + userNameJS + "? Let's bake " + userYumJS + " " + foodTypeJS + "!";
