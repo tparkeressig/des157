@@ -5,6 +5,12 @@ console.log("Reading JS");
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
-    // all other js here
+    // all other js goes here inside the addEventListener and function brackets
+
+    var basicButtonJS = document.getElementByID('basicButton');
+
+    basicButtonJS.addEventListener('mouseover', function(){
+      basicButtonJS.style.backgroundColor="yellow";
+    })
 
 });
