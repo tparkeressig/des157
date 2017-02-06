@@ -72,3 +72,7 @@ main {
   margin-top: 200px;
   background-color: lightblue;
 }
+
+#popup0{
+  display: none;
+}
