@@ -7,13 +7,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // all other js goes here inside the addEventListener and function brackets
 
-    var basicButton = document.getElementById('basicButton');
+    var basicButtonJS = document.getElementById('basicButton');
 
-    basicButton.addEventListener('mouseover', function(){
+    // on mouseover do these things to the #basicButton:
+    basicButtonJS.addEventListener('mouseover', function(){
       basicButton.style.backgroundColor="tomato";
+      basicButton.innerHTML = "Oh hello.";
     })
-    basicButton.addEventListener('mouseout', function(){
+    // on mouseout do these things to the #basicButton:
+    basicButtonJS.addEventListener('mouseout', function(){
     basicButton.style.backgroundColor="lightblue";
+    basicButton.innerHTML = "This should change color when hovered over!";
     })
 
 });
