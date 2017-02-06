@@ -73,7 +73,7 @@ main {
   background-color: lightblue;
 }
 
-div {
+#popup0 {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -85,12 +85,17 @@ div {
   display: none;
 }
 
-div p {
-  position: relative;
+#popup0 p {
   width: 400px;
   height: 200px;
   margin: auto;
   margin-top: 20%;
   color: #fff;
   background-color: #000;
+}
+
+#close {
+  position: absolute;
+  top: 10%;
+  right: 10%;
 }

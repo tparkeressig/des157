@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // let's gather all the html elements we will be influencing here:
   var basicButtonJS = document.getElementById('basicButton');
   var popup0JS = document.getElementById('popup0')
+  var close = document.getElementById('close');
+  // tried using by class name instead but it didn't work var close = document.getElementsByClassName('close');
 
   // on mouseover do these things to the #basicButton:
   basicButtonJS.addEventListener('mouseover', function() {
@@ -21,12 +23,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     basicButton.style.backgroundColor = "lightblue";
     basicButton.innerHTML = "This should change color when hovered over!";
   })
-  // on click, do these things to the #basicButton:
+  // on click, do these things to the .popup:
   basicButtonJS.addEventListener('click', function() {
     popup0.style.display = "block";
   })
+  // on clicking the close div, do these to the .popup:
+  close.addEventListener('click', function(){
+  popup0.style.display="none";
+})
 
-  //Also, prevent page from reloading
+
+
+
+  //Last but not least, prevent page from reloading
   return false;
 
 });
