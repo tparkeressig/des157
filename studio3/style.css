@@ -60,10 +60,11 @@ main {
   width: 800px;
   height: 600px;
   margin: auto;
+  margin-top: 2%;
   background-color: tomato;
 }
 
-h1 {
+#basicButton {
   position: absolute;
   width: 200px;
   height: 200px;

@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // all other js goes here inside the addEventListener and function brackets
 
-    var basicButtonJS = document.getElementByID('basicButton');
+    var basicButton = document.getElementById('basicButton');
 
-    basicButtonJS.addEventListener('mouseover', function(){
-      basicButtonJS.style.backgroundColor="yellow";
+    basicButton.addEventListener('mouseover', function(){
+      basicButton.style.backgroundColor="tomato";
     })
 
 });
