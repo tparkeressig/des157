@@ -12,5 +12,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     basicButton.addEventListener('mouseover', function(){
       basicButton.style.backgroundColor="tomato";
     })
+    basicButton.addEventListener('mouseout', function(){
+    basicButton.style.backgroundColor="lightblue";
+    })
 
 });
