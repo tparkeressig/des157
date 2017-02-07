@@ -12,14 +12,31 @@
 <body>
   <!-- Main is positioned relative and centered in the browser window, while the elements inside it will be positioned absolutely! -->
   <main>
-    <button id="basicButton">This should change color when hovered over!</button>
-    <div id="transparency"></div>
-    <!-- Seperate Div for popup box to prevent inherited transparency -->
-    <div id="popup">
-      <p>If this shows up, it worked!</p>
-      <div id="close">&otimes;</div>
-    </div>
+    <h1>Tara's "Personal Archive":</h1>
+    <!-- The basicButton is now display none but here is the HTML for reference. -->
+    <!-- <button id="basicButton">This should change color when hovered over!</button> -->
+    <!-- ================= BEGIN bg image and button HTML ==================== -->
+    <button id="glendacardButton"> </button>
+    <button id="twodollarButton"> </button>
+    <button id="icecreamButton"> </button>
+    <button id="keysButton"> </button>
+    <button id="sfcardButton"> </button>
+
+    <img src="photo.jpg" />
   </main>
+  <!-- ================= BEGIN popup HTML ==================== -->
+  <div id="transparency"></div>
+  <!-- Seperate Div for popup box to prevent inherited transparency -->
+  <div id="popup">
+    <p id="popupPara">This will be replaced via innerHTML!</p>
+    <div id="close">&otimes;</div>
+  </div>
 </body>
+
+<footer>
+  <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+  <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+  <a href="/des157/">Back to Portal</a>
+</footer>
 
 </html>
