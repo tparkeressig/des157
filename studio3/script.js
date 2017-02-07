@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         glendacardButtonJS.style.backgroundColor = "tomato";
         transparency.style.display = "block";
         popup.style.display = "block";
-        popupPara.innerHTML = "This is a thank-you card I recieved from a professor of mine! <br> I really treasure it!";
+        popupPara.innerHTML = "This is a thank-you card I recieved from a professor of mine! She told me she'd painted the design herself! <br> I really treasure it!";
     })
     // =============== END glendacardButton ================
 
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         twodollarButton.style.backgroundColor = "tomato";
         transparency.style.display = "block";
         popup.style.display = "block";
-        popupPara.innerHTML = "A friend and fellow design student gave me a two dollar bill for new year's several years ago. <br> How can I possibly spend it?!";
+        popupPara.innerHTML = "A friend and fellow design student gave me a two dollar bill for new year's several years ago. <br> How could I possibly spend such a neat gift?!";
     })
     // =============== END twodollarButton ================
 
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         icecreamButtonJS.style.backgroundColor = "tomato";
         transparency.style.display = "block";
         popup.style.display = "block";
-        popupPara.innerHTML = "My aunt is a former graphic designer, though I didn't find that out until after I'd started studying it myself! She always sends hand-made cards made from tasty magazine cutouts.";
+        popupPara.innerHTML = "My aunt always sends hand-made cards made from tasty magazine cutouts. She once worked as a graphic designer, so she has the skills!";
     })
     // =============== END icecreamButton ================
 
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         keysButtonJS.style.backgroundColor = "tomato";
         transparency.style.display = "block";
         popup.style.display = "block";
-        popupPara.innerHTML = "I went on a trip to France when I was 16. I may have stolen the window keys from the old paresian aparment we were staying in. I mean... they were nonfunctional.";
+        popupPara.innerHTML = "I went on a trip to France when I was 16. These are the old window-lock keys from each aparment we stayed in. <br> Great memory though I think I'd scold my younger self if I could time-travel.";
     })
     // =============== END keysButton ================
 
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         sfcardButtonJS.style.backgroundColor = "tomato";
         transparency.style.display = "block";
         popup.style.display = "block";
-        popupPara.innerHTML = "A friend bought me this really cool card last winter. I plan to frame it one day.";
+        popupPara.innerHTML = "A friend bought me this really cool card last winter, now wherever I move I have a reminder of the Bay Area's scenic routes. <br> I plan to frame it one day.";
     })
     // =============== END sfcardButton ================
 
