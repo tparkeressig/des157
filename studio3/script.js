@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // let's gather all the html elements we will be influencing here:
   var basicButtonJS = document.getElementById('basicButton');
-  var popup0JS = document.getElementById('popup0')
-  var close = document.getElementById('close');
-  // tried using by class name instead but it didn't work var close = document.getElementsByClassName('close');
+  var transparencyJS = document.getElementById('transparency')
+  var popupJS = document.getElementById('popup');
+  var closeJS = document.getElementById('close');
+
+  // tried using by class name instead but it didn't work. The code was var close = document.getElementsByClassName('close');
 
   // on mouseover do these things to the #basicButton:
   basicButtonJS.addEventListener('mouseover', function() {
@@ -23,13 +25,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     basicButton.style.backgroundColor = "lightblue";
     basicButton.innerHTML = "This should change color when hovered over!";
   })
-  // on click, do these things to the .popup:
+  // on click, do these things to the #transparency:
   basicButtonJS.addEventListener('click', function() {
-    popup0.style.display = "block";
+    transparency.style.display = "block";
+    popup.style.display = "block";
   })
-  // on clicking the close div, do these to the .popup:
-  close.addEventListener('click', function(){
-  popup0.style.display="none";
+  // on clicking the close div, do these to the #transparency:
+  closeJS.addEventListener('click', function(){
+  transparency.style.display="none";
+  popup.style.display="none";
 })
 
 

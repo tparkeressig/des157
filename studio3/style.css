@@ -73,7 +73,7 @@ main {
   background-color: lightblue;
 }
 
-#popup0 {
+#transparency {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -85,13 +85,15 @@ main {
   display: none;
 }
 
-#popup0 p {
+#popup{
+  position: absolute;
   width: 400px;
   height: 200px;
-  margin: auto;
+  margin-left: 45%;
   margin-top: 20%;
   color: #fff;
   background-color: #000;
+  display: none;
 }
 
 #close {
