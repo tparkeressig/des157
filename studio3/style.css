@@ -96,8 +96,14 @@ main {
   display: none;
 }
 
+#popup p{
+  width: 380px;
+  height: 180px;
+  margin: 20px;
+}
+
 #close {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 20px;
+  right: 20px;
 }
