@@ -63,8 +63,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // ================ visualization! ================
   // haven't figured this out yet ):
-
-
+  // context = new AudioContext(); //an "audio context" object instance
+  // analyser = context.createAnalyser();
+  // canvas = document.getElementById('fancyAnalyser');
+  // sources = context.createMediaElementSource(purrAudio);
+  // analyser.connect(context.destination);
+  //
+  // function frameLooper() {
+  //   window.RequestAnimationFrame(frameLooper);
+  //   mysteryArray = new Uint8Array(analyser.frequencyBinCount);
+  //   analyser.getByteFrequencyData(mysteryArray);
+  //   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  //   ctx.fillStyle = '#845F49'; //color of the bars
+  //   bars = 100;
+  //   for (var i = 0; i < bars; i++) {
+  //     bar_x = i * 3;
+  //     bar_width = 2;
+  //     bar_height = -(mysteryArray[i] / 2);
+  //     //fillRect (x, y, width, height) //explanation of the Below
+  //     ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
+  //   }
+  // }
 
   //Last but not least, prevent page from reloading
   return false;

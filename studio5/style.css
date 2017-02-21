@@ -63,3 +63,9 @@ header, main, footer {
   margin: auto;
   margin-top: 25px;
 }
+
+#analyser {
+  width: 500px;
+  height: 30px;
+  background: lightblue;
+}
