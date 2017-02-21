@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       pressedYet = false;
       console.log("Cat pressed again, will now stop purring.");
     }
-    if (pressedYet == false) {
+    // if (pressedYet == false) {
+    else {
       //on click, cat begins purring and pause button appears
       purrAudio.play();
       catButton.src = "./images/purring-with-interaction.png"
