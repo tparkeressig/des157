@@ -71,11 +71,15 @@ canvas {
   background-color: lightblue;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 li a {
   color: #845F49;
 }
 
 footer ul li {
   display: inline;
-  margin: .5%;
+  margin: 20px;
 }
