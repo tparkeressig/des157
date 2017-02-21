@@ -19,10 +19,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (pressedYet == false) {
       //on mouseover, cat is still sleeping but play button appears
       catButton.src = "./images/sleeping-with-interaction.png"
+      console.log("Cat hovered while sleeping, show play icon.");
     }
     if (pressedYet == true) {
       //on mouseover after click, cat continues purring and pause button reappears
       catButton.src = "./images/purring-with-interaction.png"
+      console.log("Cat hovered while purring, show pause icon.");
     }
   });
 
@@ -31,28 +33,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (pressedYet == false) {
       //on mouseout without click, cat is sleeping & play button disappears
       catButton.src = "./images/sleeping-no-interaction.png"
+      console.log("Cat mouseout while sleeping, show no icon.");
     }
     if (pressedYet == true) {
       //on mouseout after click, cat is purring & pause button disappears
       catButton.src = "./images/purring-no-interaction.png"
+      console.log("Cat mouseout while purring, show no icon.");
     }
   });
 
   // ================ click events ================
   catButton.addEventListener("click", function() {
+    if (pressedYet == true) {
+      //on click, cat begins purring and pause button appears
+      purrAudio.pause();
+      catButton.src = "./images/sleeping-with-interaction.png"
+      pressedYet = false;
+      console.log("Cat pressed again, will now stop purring.");
+    }
     if (pressedYet == false) {
       //on click, cat begins purring and pause button appears
       purrAudio.play();
       catButton.src = "./images/purring-with-interaction.png"
       pressedYet = true;
-    }
-    if (pressedYet == true) {
-      //on click, cat begins purring and pause button appears
-      purrAudio.stop(); //I have also tried pause(); to no effect! (except breaking the functionality entirely)
-      catButton.src = "./images/sleeping-with-interaction.png"
-      pressedYet = false;
+      console.log("Cat pressed, will now purr.");
     }
   });
+
 
   // ================ visualization! ================
   // haven't figured this out yet ):
