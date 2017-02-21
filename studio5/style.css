@@ -70,3 +70,12 @@ canvas {
   margin: auto;
   background-color: lightblue;
 }
+
+li a {
+  color: #845F49;
+}
+
+footer ul li {
+  display: inline;
+  margin: .5%;
+}
