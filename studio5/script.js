@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // all other js goes here inside the addEventListener and function brackets
 
+  var catButton = document.getElementById("theCat"); //get the img of the cat in a variable
+  var purrAudio = new Audio(); //create a variable that is audio
+  purrAudio.src = "./audio/purring.mp3"; //bring in the mp3 file
+
+  catButton.addEventListener("click", function() {
+    purrAudio.play();
+  });
+
+
 
 
 
