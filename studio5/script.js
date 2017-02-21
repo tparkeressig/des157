@@ -7,12 +7,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // all other js goes here inside the addEventListener and function brackets
 
+  // ================ create some variables and source the audio ================
   var catButton = document.getElementById("theCat"); //get the img of the cat in a variable
   var pressedYet = false; //boolean to tell if the catButton has been pressed yet
   var purrAudio = new Audio(); //create a variable that is audio
   purrAudio.src = "./audio/purring.mp3"; //bring in the mp3 file
 
 
+  // ================ mouseover events ================
   catButton.addEventListener("mouseover", function() {
     if (pressedYet == false) {
       //on mouseover, cat is still sleeping but play button appears
@@ -24,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   });
 
-  // mouseout events
+  // ================ mouseout events ================
   catButton.addEventListener("mouseout", function() {
     if (pressedYet == false) {
       //on mouseout without click, cat is sleeping & play button disappears
@@ -36,23 +38,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   });
 
-
-
-
-
-
-  //on click, cat begins purring and pause button appears
+  // ================ click events ================
   catButton.addEventListener("click", function() {
-    purrAudio.play();
-    catButton.src = "./images/purring-with-interaction.png"
-    pressedYet = true;
+    if (pressedYet == false) {
+      //on click, cat begins purring and pause button appears
+      purrAudio.play();
+      catButton.src = "./images/purring-with-interaction.png"
+      pressedYet = true;
+    }
+    if (pressedYet == true) {
+      //on click, cat begins purring and pause button appears
+      purrAudio.stop(); //I have also tried pause(); to no effect! (except breaking the functionality entirely)
+      catButton.src = "./images/sleeping-with-interaction.png"
+      pressedYet = false;
+    }
   });
 
-
+  // ================ visualization! ================
+  // haven't figured this out yet ):
 
 
 
   //Last but not least, prevent page from reloading
   return false;
-
 });
