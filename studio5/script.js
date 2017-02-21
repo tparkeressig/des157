@@ -56,18 +56,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
   return false;
 
 });
-rs catButton.src = "./images/purring-no-interaction.png"
-}
-});
-
-
-
-
-
-
-
-
-//Last but not least, prevent page from reloading
-return false;
-
-});
