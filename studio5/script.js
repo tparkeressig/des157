@@ -64,9 +64,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // ================ visualization! ================
   // haven't figured this out yet ):
+  var AudioContext = window.AudioContext || window.webkitAudioContext; //cross-browser compatability
+  var audCntxt = new AudioContext(); //create the audio "context" aka an instance of audio being manipulated
+  var analyserNode = new AnalyserNode(audCntxt);
+
+  //attempting to understand what any of these create!
+  console.log("var AudioContext is " + AudioContext);
+  console.log("var audCntxt is " + audCntxt);
+  console.log("var analyserNode is " + analyserNode);
+  //ok I read the console msgs and idk what any of that means... omg I'ma cry ):
 
 
 
-  //Last but not least, prevent page from reloading
-  return false;
+
+
+
+
+
+
+  //and that's a wrap (but not a line wrap)!
 });
