@@ -11,8 +11,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var purrAudio = new Audio(); //create a variable that is audio
   purrAudio.src = "./audio/purring.mp3"; //bring in the mp3 file
 
+  //on mouseover, cat is still sleeping but play button appears
+  catButton.addEventListener("mouseover", function() {
+    catButton.src = "./images/sleeping-with-interaction.png"
+  });
+
+  //on mouseout, cat is still sleeping but play button disappears
+  catButton.addEventListener("mouseout", function() {
+    catButton.src = "./images/sleeping-no-interaction.png"
+  });
+
+  //on click, cat begins purring and pause button appears
   catButton.addEventListener("click", function() {
     purrAudio.play();
+    catButton.src = "./images/purring-with-interaction.png"
   });
 
 

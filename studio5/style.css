@@ -52,4 +52,14 @@ table {
 ============================================================================= */
 
 body {
+  font-family: sans-serif;
+  text-align: center;
+  color: #845F49;
+  background-color: #e5b9a0;
+}
+
+header, main, footer {
+  width: 300px;
+  margin: auto;
+  margin-top: 25px;
 }
