@@ -12,11 +12,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var purrAudio = new Audio(); //create a variable that is audio
   purrAudio.src = "./audio/purring.mp3"; //bring in the mp3 file
 
-  //on mouseover, cat is still sleeping but play button appears
+
   catButton.addEventListener("mouseover", function() {
-    catButton.src = "./images/sleeping-with-interaction.png"
+    if (pressedYet == false) {
+      //on mouseover, cat is still sleeping but play button appears
+      catButton.src = "./images/sleeping-with-interaction.png"
+    }
+    if (pressedYet == true) {
+      //on mouseover after click, cat continues purring and pause button reappears
+      catButton.src = "./images/purring-with-interaction.png"
+    }
   });
 
+  // mouseout events
   catButton.addEventListener("mouseout", function() {
     if (pressedYet == false) {
       //on mouseout without click, cat is sleeping & play button disappears
@@ -27,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       catButton.src = "./images/purring-no-interaction.png"
     }
   });
+
+
+
+
+
 
   //on click, cat begins purring and pause button appears
   catButton.addEventListener("click", function() {
@@ -39,11 +52,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-
   //Last but not least, prevent page from reloading
   return false;
 
 });
-eturn false;
+rs catButton.src = "./images/purring-no-interaction.png"
+}
+});
+
+
+
+
+
+
+
+
+//Last but not least, prevent page from reloading
+return false;
 
 });
