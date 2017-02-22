@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var analyser, canvas, ctx;
   canvas = document.getElementById("barvisualizer");
   canvas.width = 500;
-  canvas.height = 100;
+  canvas.height = 256;
   ctx = canvas.getContext("2d");
 
   function setupWebAudio() {
