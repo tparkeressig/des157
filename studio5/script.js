@@ -64,23 +64,40 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // ================ visualization! ================
   // haven't figured this out yet ):
-  var AudioContext = window.AudioContext || window.webkitAudioContext; //cross-browser compatability
-  var audCntxt = new AudioContext(); //create the audio "context" aka an instance of audio being manipulated
-  var analyserNode = new AnalyserNode(audCntxt);
+  var analyser, canvas, ctx;
+  canvas = document.createElement("canvas");
+  canvas.width = 500;
+  canvas.height = 100;
+  document.body.appendChild(canvas);
+  ctx = canvas.getContext("2d");
 
-  //attempting to understand what any of these create!
-  console.log("var AudioContext is " + AudioContext);
-  console.log("var audCntxt is " + audCntxt);
-  console.log("var analyserNode is " + analyserNode);
-  //ok I read the console msgs and idk what any of that means... omg I'ma cry ):
+  function setupWebAudio() {
+    console.log("The function setupWebAudio has been called.");
+    var audioContext = new AudioContext();
+    analyser = audioContext.createAnalyser();
+    var source = audioContext.createMediaElementSource(purrAudio);
+    source.connect(analyser)
+    analyser.connect(audioContext.destination);
+  };
 
+  function draw() {
+    console.log("The function draw has been called.");
+    requestAnimationFrame(draw);
+    var freqByteData = new Uint8Array(analyser.frequencyBinCount);
+    analyser.getByteFrequencyData(freqByteData);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    for (var i = 1; i < freqByteData.length; i += 10) {
 
+      ctx.fillStyle = "#845F49";
+      ctx.fillRect(i, canvas.height - freqByteData[i], 10, canvas.height);
+      ctx.strokeRect(i, canvas.height - freqByteData[i], 10, canvas.height);
+    }
 
+  };
 
-
-
-
+  setupWebAudio();
+  draw();
 
   //and that's a wrap (but not a line wrap)!
 });

@@ -64,7 +64,7 @@ header, main, footer {
   margin-top: 25px;
 }
 
-canvas {
+#barvisualizer {
   width: 500px;
   height: 100px;
   margin: auto;
