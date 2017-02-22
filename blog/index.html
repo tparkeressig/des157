@@ -39,10 +39,16 @@
         <p>I tried to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API">Web Audio API</a> but after spending an entire day on it (10 hours) I just gave up. I need much more direct instruction to
           learn a library, and I do not understand what all these vague tutorials are trying to explain. At least I got the cat button mostly working.</p>
         <p>I did discover <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode">AnalyserNode</a> which looks useful. But it's nearly 3AM while I'm writing this and I don't know how to read words anymore.</p>
+        <br>
         <h3>Update!</h3>
         <p>I closely followed the code of <a href="https://www.youtube.com/watch?v=DHxtc4W46Qo">this video</a> and now I have a visualizer along with my cat button, hooray!</p>
-        <img src="images/studio5-2.png" alt="second screenshot of studio 5" width="600" height="410" />
+        <img src="images/blog5-2.png" alt="second screenshot of studio 5" width="600" height="410" />
         <p>It still has one funny bug but we'll see if that can get fixed soon!</p>
+        <br>
+        <h3>Update #2!</h3>
+        <p>The bug has been fixed! Champagne! What was it? Because the audio data is pulling from Bytes, I made only the JS canvas 256 pixels tall, while the css description of the canvas was 100px tall. Therefore, the canvas is tall enough to contain the
+          byte data and the rectangles do not float off the baseline, but is then squished down into the size and shape I originally desired. </p>
+        <img src="images/blog5-3.png" alt="third screenshot of studio 5" width="600" height="403" />
       </article>
       <div class="blog-posts">
         <article id="blog3">
