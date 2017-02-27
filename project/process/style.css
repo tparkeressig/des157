@@ -4,20 +4,25 @@ body {
   font-family: sans-serif;
 }
 
+main {
+  width: 600px;
+  margin: auto 60px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   width: 600px;
-  margin: auto;
+  margin: auto 60px;
 }
 
 p {
   width: 600px;
   display: block;
-  margin: auto;
+  margin: auto 60px;
   padding: 1em;
 }
 
 img {
   width: 600px;
   display: block;
-  margin: auto;
+  margin: auto 60px;
 }
