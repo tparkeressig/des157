@@ -9,20 +9,7 @@ main {
   margin: 60px auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  width: 600px;
-  margin: 60px auto;
-}
-
-p {
-  width: 600px;
+p, img, h1, h2, h3, h4, h5, h6 {
   display: block;
-  margin: 60px auto;
   padding: 1em;
-}
-
-img {
-  width: 600px;
-  display: block;
-  margin: 60px auto;
 }
