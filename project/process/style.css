@@ -4,6 +4,11 @@ body {
   font-family: sans-serif;
 }
 
+header {
+  width: 600px;
+  margin: 60px auto;
+}
+
 main {
   width: 600px;
   margin: 60px auto;
@@ -13,4 +18,9 @@ p, img, h1, h2, h3, h4, h5, h6, ul, ol {
   display: block;
   padding-top, padding-bottom: : .5em;
   list-style: none;
+}
+
+footer {
+  width: 600px;
+  margin: 60px auto;
 }
