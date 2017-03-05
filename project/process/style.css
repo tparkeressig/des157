@@ -11,6 +11,6 @@ main {
 
 p, img, h1, h2, h3, h4, h5, h6, ul, ol {
   display: block;
-  padding: .5em;
+  padding-top, padding-bottom: : .5em;
   list-style: none;
 }
