@@ -72,7 +72,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function setupWebAudio() {
     console.log("The function setupWebAudio has been called.");
-    var audioContext = new AudioContext();
+    var audioContext = new(window.AudioContext || window.webkitAudioContext)();
+    // Once Safari summports Web Audio API, you can simply switch to:
+    // var audioContext = new AudioContext(); 
     analyser = audioContext.createAnalyser();
     var source = audioContext.createMediaElementSource(purrAudio);
     source.connect(analyser)
