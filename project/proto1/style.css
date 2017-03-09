@@ -58,8 +58,8 @@
   }
 
   img {
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 415px;
     background-color: lightgrey;
     display: block;
     margin: auto;
@@ -88,9 +88,14 @@
     height: 30px;
     margin-top: 50px;
     display: block;
-    position: fixed;
-    bottom: 0px;
+    /*position: fixed;
+    bottom: 0px;*/
     text-align: center;
     padding-top: 20px;
     font-size: .75em;
+  }
+
+  l, v, h, f, a {
+    color: darkgrey;
+    text-decoration: none;
   }
