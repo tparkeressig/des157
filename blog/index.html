@@ -6,104 +6,106 @@
 <!-- Contact Tara at TaraMakes.com -->
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
-  <title>Blog for DES 157</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <title>Blog for DES 157</title>
 </head>
 
 <!-- BEGIN: Body code -->
 
 <body>
-  <header>
-    <h1>Blog for DES 157</h1>
-  </header>
+    <header>
+        <h1>Blog for DES 157</h1>
+    </header>
 
-  <main>
-    <nav>
-      <h3>{Posts by Date}</h3>
-      <ol>
-        <li><a href="#blog1">First Blog Post</a></li>
-        <li><a href="#blog2">Second Blog Post</a></li>
-        <li><a href="#blog3">Third Blog Post</a></li>
-        <li><a href="#blog4">Fourth Blog Post</a></li>
-        <li><a href="#blog5">Fifth Blog Post</a></li>
-      </ol>
-    </nav>
-    <div class="blog-posts">
-      <article id="blog5">
-        <h2>Five: "Evauation of a Library or API"</h2>
-        <time datetime="2017-02-21 02:37:29">February 21st, 2017</time>
-        <p>This post is about my <a href="../studio5/index.html">Studio 5</a> project.</p>
-        <img src="images/blog5-1.png" alt="A screenshot of my studio 5 assignment" width="600" height="393" />
-        <p>I tried to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API">Web Audio API</a> but after spending an entire day on it (10 hours) I just gave up. I need much more direct instruction to
-          learn a library, and I do not understand what all these vague tutorials are trying to explain. At least I got the cat button mostly working.</p>
-        <p>I did discover <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode">AnalyserNode</a> which looks useful. But it's nearly 3AM while I'm writing this and I don't know how to read words anymore.</p>
-        <br>
-        <h3>Update!</h3>
-        <p>I closely followed the code of <a href="https://www.youtube.com/watch?v=DHxtc4W46Qo">this video</a> and now I have a visualizer along with my cat button, hooray!</p>
-        <img src="images/blog5-2.png" alt="second screenshot of studio 5" width="600" height="410" />
-        <p>It still has one funny bug but we'll see if that can get fixed soon!</p>
-        <br>
-        <h3>Update #2!</h3>
-        <p>The bug has been fixed! Champagne! What was it? Because the audio data is pulling from Bytes, I made only the JS canvas 256 pixels tall, while the css description of the canvas was 100px tall. Therefore, the canvas is tall enough to contain the
-          byte data and the rectangles do not float off the baseline, but is then squished down into the size and shape I originally desired. </p>
-        <img src="images/blog5-3.png" alt="third screenshot of studio 5" width="600" height="403" />
-      </article>
-      <div class="blog-posts">
-        <article id="blog3">
-          <h2>Three: "Evauation of my Own Interface Design"</h2>
-          <time datetime="2017-02-07 03:50:31">February 7th, 2017</time>
-          <p>This time my blog post is about my <a href="../studio3/index.html">Studio 3</a> project.</p>
-          <img src="images/blog3-1.png" alt="A screenshot of my studio 3 assignment" width="600" height="563" />
-          <p>My main visual element was a photos of bulletin boards. I connected this to the interface I used by creating a slight color overlay over the portion of the photo containing objects people can learn more about. When the user hovers over or clicks
-            on the highlighted area, the color below their pointer or finger changes from light blue to tomato red. This is the first aspect - alerting people to interactive content - that makes it an effective interface design. Next, when the user clicks/taps
-            on the element, a popover appears containing information about the particular object they selected. A hidden layer between this popover and the original photograph appears as well, greying out the photograph, and emphasizing the popover, but
-            leaving enough of the background image visible that it is clear to people they have not gone to a new webpage. This is aspect number 2 of effective interface design. Finally, a smallish exit button is provided on the top right of the popover.
-            The exit button is an “X” in a circle, which is a commonly used and recognizable element. Additionally, it allows people to move back and forth between the main photograph and different bits of information. The clarity of this element is the
-            third aspect of creating an effective interface design.</p>
-        </article>
-        <article id="blog2">
-          <h2>Two: "Critical evaluation of a Web-Based Form"</h2>
-          <time datetime="2017-01-31 01:36:27">January 31st, 2017</time>
-          <p>Like everyone else, I send and receive a lot of emails. And it got me thinking, isn’t writing an email just filling out a form?</p>
-          <img src="images/blog2-1.png" alt="A screenshot of gmail's compose an email form" width="600" height="214" />
-          <p>According to my interpretation of <a href="http://www.slideshare.net/billder/learning-ixd-from-everyday-objects">the article/slideshow by Bill DeRouchey</a> we read, the in-browser gmail email client I frequently use has a clear priority or
-            hierarchy. The text fields are given ample space for who you are writing to and what you’re writing, and color is kept minimal, except for the send button, which you wouldn’t want to hit by mistake. The clarity falls apart a bit, however.
-            While the email form attempts restraint and simplicity in its minimalist-ish form, using icons without labels means I often mix up functions. One recurring problem is mistaking the “attachment” icon (second to the right from Send) for the
-            “link” icon (sixth to the right from Send). In a way, these functions are conceptually similar, and gmail’s use of a non-standard “link” icon perpetually fools me into thinking it must be a paperclip, and therefore the paperclip icon is a
-            link. This mix up drives me pretty bonkers in an otherwise easy to use email application.</p>
-          <img src="images/blog2-2.png" alt="A screenshot of the attach a link popup within gmail" width="600" height="259" />
-          <p>Thanks for reading again. I just complain about apps I use here, huh?</p>
-        </article>
-        <article id="blog1">
-          <h2>One: "Evaluate a user interface"</h2>
-          <time datetime="2017-01-19 01:00">January 19th, 2017</time>
-          <p>I use Snapchat quite frequently to keep in touch with friends. However, I think its interface is pretty ridiculous, so that's why I'm writing about it.</p>
-          <img src="images/blog1-1.jpeg" alt="A screenshot of snapchat" width="350" height="621" />
-          <p>As you can see in this screenshot, Snapchat opens directly to the camera view. It has been widely lauded for this in interaction design and ux design circles. However, that seems to be where the intuitive features end. I have a firm belief that
-            snapchat intends to make its product exclusive to teens by choosing interaction patterns that even college students have trouble figuring out.</p>
-          <p>For the longest time, there was literally no indication of what else one could do from this screen. It's all icons. One must be willing to risk loosing a photo and simply tapping around to discover features, something my own risk-adverse parents
-            have had the greatest trouble doing when I tried to get them to join.</p>
-          <p> Thankfully, Snapchat seems to be taking some steps in a positive direction. While previously, one could not interact with the friend chatlist, seen below, by tapping on names. Only a swipe from left to right, difficult for a right-handed person
-            holding their phone with one hand to do, especially when trying to read a message listed at the top.</p>
-          <img src="images/blog1-2.jpeg" alt="A screenshot of snapchat" width="350" height="621" />
-          <p>Well I can't hate it too much if I'm still using it, right? Thanks for listening to me rant about an app I use every-other day and love to hate. The end.</p>
-        </article>
-      </div>
-      <!-- <aside> Not currently using an Aside section, however I want to keep this here to reference how to creat one in the future.</aside> -->
-  </main>
+    <main>
+        <nav>
+            <h3>{Posts by Date}</h3>
+            <ol>
+                <li><a href="#blog1">First Blog Post</a></li>
+                <li><a href="#blog2">Second Blog Post</a></li>
+                <li><a href="#blog3">Third Blog Post</a></li>
+                <li><a href="#blog4">Fourth Blog Post</a></li>
+                <li><a href="#blog5">Fifth Blog Post</a></li>
+            </ol>
+        </nav>
+        <div class="blog-posts">
+            <article id="blog5">
+                <h2>Five: "Evauation of a Library or API"</h2>
+                <time datetime="2017-02-21 02:37:29">February 21st, 2017</time>
+                <p>This post is about my <a href="../studio5/index.html">Studio 5</a> project.</p>
+                <img src="images/blog5-1.png" alt="A screenshot of my studio 5 assignment" width="600" height="393" />
+                <p>I tried to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API">Web Audio API</a> but after spending an entire day on it (10 hours) I just gave up. I need much more direct instruction
+                    to learn a library, and I do not understand what all these vague tutorials are trying to explain. At least I got the cat button mostly working.</p>
+                <p>I did discover <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode">AnalyserNode</a> which looks useful. But it's nearly 3AM while I'm writing this and I don't know how to read words anymore.</p>
+                <br>
+                <h3>Update!</h3>
+                <p>I closely followed the code of <a href="https://www.youtube.com/watch?v=DHxtc4W46Qo">this video</a> and now I have a visualizer along with my cat button, hooray!</p>
+                <img src="images/blog5-2.png" alt="second screenshot of studio 5" width="600" height="410" />
+                <p>It still has one funny bug but we'll see if that can get fixed soon!</p>
+                <br>
+                <h3>Update #2!</h3>
+                <p>The bug has been fixed! Champagne! What was it? Because the audio data is pulling from Bytes, I made only the JS canvas 256 pixels tall, while the css description of the canvas was 100px tall. Therefore, the canvas is tall enough to contain
+                    the byte data and the rectangles do not float off the baseline, but is then squished down into the size and shape I originally desired. </p>
+                <img src="images/blog5-3.png" alt="third screenshot of studio 5" width="600" height="403" />
+            </article>
+            <div class="blog-posts">
+                <article id="blog3">
+                    <h2>Three: "Evauation of my Own Interface Design"</h2>
+                    <time datetime="2017-02-07 03:50:31">February 7th, 2017</time>
+                    <p>This time my blog post is about my <a href="../studio3/index.html">Studio 3</a> project.</p>
+                    <img src="images/blog3-1.png" alt="A screenshot of my studio 3 assignment" width="600" height="563" />
+                    <p>My main visual element was a photos of bulletin boards. I connected this to the interface I used by creating a slight color overlay over the portion of the photo containing objects people can learn more about. When the user hovers
+                        over or clicks on the highlighted area, the color below their pointer or finger changes from light blue to tomato red. This is the first aspect - alerting people to interactive content - that makes it an effective interface design.
+                        Next, when the user clicks/taps on the element, a popover appears containing information about the particular object they selected. A hidden layer between this popover and the original photograph appears as well, greying out the
+                        photograph, and emphasizing the popover, but leaving enough of the background image visible that it is clear to people they have not gone to a new webpage. This is aspect number 2 of effective interface design. Finally, a smallish
+                        exit button is provided on the top right of the popover. The exit button is an “X” in a circle, which is a commonly used and recognizable element. Additionally, it allows people to move back and forth between the main photograph
+                        and different bits of information. The clarity of this element is the third aspect of creating an effective interface design.</p>
+                </article>
+                <article id="blog2">
+                    <h2>Two: "Critical evaluation of a Web-Based Form"</h2>
+                    <time datetime="2017-01-31 01:36:27">January 31st, 2017</time>
+                    <p>Like everyone else, I send and receive a lot of emails. And it got me thinking, isn’t writing an email just filling out a form?</p>
+                    <img src="images/blog2-1.png" alt="A screenshot of gmail's compose an email form" width="600" height="214" />
+                    <p>According to my interpretation of <a href="http://www.slideshare.net/billder/learning-ixd-from-everyday-objects">the article/slideshow by Bill DeRouchey</a> we read, the in-browser gmail email client I frequently use has a clear priority
+                        or hierarchy. The text fields are given ample space for who you are writing to and what you’re writing, and color is kept minimal, except for the send button, which you wouldn’t want to hit by mistake. The clarity falls apart a
+                        bit, however. While the email form attempts restraint and simplicity in its minimalist-ish form, using icons without labels means I often mix up functions. One recurring problem is mistaking the “attachment” icon (second to the
+                        right from Send) for the “link” icon (sixth to the right from Send). In a way, these functions are conceptually similar, and gmail’s use of a non-standard “link” icon perpetually fools me into thinking it must be a paperclip, and
+                        therefore the paperclip icon is a link. This mix up drives me pretty bonkers in an otherwise easy to use email application.</p>
+                    <img src="images/blog2-2.png" alt="A screenshot of the attach a link popup within gmail" width="600" height="259" />
+                    <p>Thanks for reading again. I just complain about apps I use here, huh?</p>
+                </article>
+                <article id="blog1">
+                    <h2>One: "Evaluate a user interface"</h2>
+                    <time datetime="2017-01-19 01:00">January 19th, 2017</time>
+                    <p>I use Snapchat quite frequently to keep in touch with friends. However, I think its interface is pretty ridiculous, so that's why I'm writing about it.</p>
+                    <img src="images/blog1-1.jpeg" alt="A screenshot of snapchat" width="350" height="621" />
+                    <p>As you can see in this screenshot, Snapchat opens directly to the camera view. It has been widely lauded for this in interaction design and ux design circles. However, that seems to be where the intuitive features end. I have a firm
+                        belief that snapchat intends to make its product exclusive to teens by choosing interaction patterns that even college students have trouble figuring out.</p>
+                    <p>For the longest time, there was literally no indication of what else one could do from this screen. It's all icons. One must be willing to risk loosing a photo and simply tapping around to discover features, something my own risk-adverse
+                        parents have had the greatest trouble doing when I tried to get them to join.</p>
+                    <p> Thankfully, Snapchat seems to be taking some steps in a positive direction. While previously, one could not interact with the friend chatlist, seen below, by tapping on names. Only a swipe from left to right, difficult for a right-handed
+                        person holding their phone with one hand to do, especially when trying to read a message listed at the top.</p>
+                    <img src="images/blog1-2.jpeg" alt="A screenshot of snapchat" width="350" height="621" />
+                    <p>Well I can't hate it too much if I'm still using it, right? Thanks for listening to me rant about an app I use every-other day and love to hate. The end.</p>
+                </article>
+            </div>
+            <!-- <aside> Not currently using an Aside section, however I want to keep this here to reference how to creat one in the future.</aside> -->
+    </main>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Return to Portal</a></li>
-        <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
-        <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
-        <li><a href="mailto:tparkeressig@ucdavis.edu">Email</a></li>
-      </ul>
-    </nav>
-  </footer>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Return to Portal</a></li>
+                <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
+                <li><a href="mailto:tparkeressig@ucdavis.edu">Email</a></li>
+                <li> | </li>
+                <li><a href="https://glendadrew.github.io/des157-w17/">Class Portal</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
