@@ -1,52 +1,54 @@
-  @charset "UTF-8";
-  /* This is Tara's Prototype 1 - ISEA Project DES 157 CSS Document */
-  /* This is Eric Meyer's Reset:
+@charset "UTF-8";
+/* This is Tara's Prototype 1 - ISEA Project DES 157 CSS Document */
+
+/* This is Eric Meyer's Reset:
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain) */
 
-  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-  }
-  /* HTML5 display-role reset for older browsers */
+}
 
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
-  }
+}
 
-  body {
+body {
     line-height: 1;
-  }
+}
 
-  ol, ul {
+ol, ul {
     list-style: none;
-  }
+}
 
-  blockquote, q {
+blockquote, q {
     quotes: none;
-  }
+}
 
-  blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
-  }
+}
 
-  table {
+table {
     border-collapse: collapse;
     border-spacing: 0;
-  }
-  /* ==========================================================================
-============================Put Ya Code Below Here!==========================
-============================================================================= */
+}
 
-  body {}
+/*================================================================================================Put Ya Code Below Here!===========================
+========================================================================*/
 
-  header {
+body {}
+
+header {
     background-color: lightgrey;
     width: 100%;
     height: 50px;
@@ -55,24 +57,25 @@
     padding-left: 20px;
     padding-top: 1%;
     font-size: 2em;
-  }
+}
 
-  img {
+img {
     width: 600px;
     height: 415px;
     background-color: lightgrey;
     display: block;
     margin: auto;
-  }
+}
 
-  main {
+main {
     width: 394px;
     margin: auto;
+    display: flex;
     justify-content: space-between;
     margin-top: 50px;
-  }
+}
 
-  .button {
+.button {
     width: 120px;
     height: 40px;
     border-radius: 5px;
@@ -80,9 +83,15 @@
     background-color: transparent;
     margin-left: 4px;
     margin-right: 4px;
-  }
+    text-align: center;
+    padding-top: 22px;
+}
 
-  footer {
+.button:hover {
+    background-color: lightgrey;
+}
+
+footer {
     background-color: lightgrey;
     width: 100%;
     height: 30px;
@@ -93,9 +102,9 @@
     text-align: center;
     padding-top: 20px;
     font-size: .75em;
-  }
+}
 
-  l, v, h, f, a {
+l, v, h, f, a {
     color: darkgrey;
     text-decoration: none;
-  }
+}
